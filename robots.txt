@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+# Independent demonstration: enable indexing only after authorisation.
