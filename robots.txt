@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: /
-# Independent demonstration: enable indexing only after authorisation.
+Allow: /
+
+Sitemap: https://komape-attorneys.vercel.app/sitemap.xml

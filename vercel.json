@@ -7,6 +7,10 @@
       "source": "/(.*)",
       "headers": [
         {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self' mailto:; script-src 'self' 'sha256-/Oog9T8x5WQ9FueQmtPnCv0ss/pgkBbwB61zTC5IUB0=' 'sha256-1ElfqPDSMWxl65z1SFZW5jg3IG3FtmjIyIntIM5xKkI=' 'sha256-88+WeBvFMJZlCkhAhlHlxy0EolbqdW8zBAQLFEBj1d4=' 'sha256-9p91PGUoPcj07VlymUwhprA1qvLXw1B6Vu7hA/O/1AM=' 'sha256-BSZBPX1OyTnwlkgI7K3z0oacuWswY/2zRF1Mm/2hgrM=' 'sha256-GjrXpUQyDUHf0GJsG5/NPLyw6qX0UyYsJCneVcxv+Jg=' 'sha256-LOQa4HZ0n4HwPVyj4iC1f0li6+qzTbiHcr0nCNnDcUI=' 'sha256-d4fM6SrpmOIoILsXnlA1MQsdJQVvpsjPbzDXJEf68D0=' 'sha256-x/6zVSU/7MHUTw/4s3Se9PPHjJ15/M4+ngpoptHnx4U='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://images.pexels.com https://www.google.com https://*.gstatic.com; connect-src 'self'; frame-src https://www.google.com; upgrade-insecure-requests"
+        },
+        {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
         },
@@ -20,7 +24,24 @@
         },
         {
           "key": "Permissions-Policy",
-          "value": "camera=(), microphone=(), geolocation=()"
+          "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        },
+        {
+          "key": "X-Permitted-Cross-Domain-Policies",
+          "value": "none"
+        }
+      ]
+    },
+    {
+      "source": "/assets/komape-social-preview-2026.jpg",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, s-maxage=604800"
         }
       ]
     }
