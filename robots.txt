@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://komape-attorneys.vercel.app/sitemap.xml
+Sitemap: https://www.komape-attorneys.com/sitemap.xml
